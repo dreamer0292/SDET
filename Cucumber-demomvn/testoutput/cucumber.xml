@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="106.69">
-<testcase classname="To validate Login Application" name="To Test login with valid credentials" time="106.53">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="16.385">
+<testcase classname="To validate Login Application" name="To Test login with valid credentials" time="16.232">
 <system-out><![CDATA[Given Login page............................................................passed
 When Enter valid name "Admin"...............................................passed
 And Enter valid pwd "admin123"..............................................passed

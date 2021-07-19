@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-07-16T05:24:05.541Z",
+        "start_timestamp": "2021-07-19T05:23:32.300Z",
         "line": 3,
         "name": "To Test login with valid credentials",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 19795000000,
+              "duration": 5820000000,
               "status": "passed"
             },
             "line": 5,
@@ -25,7 +25,7 @@
           },
           {
             "result": {
-              "duration": 57000000,
+              "duration": 53000000,
               "status": "passed"
             },
             "line": 6,
@@ -43,7 +43,7 @@
           },
           {
             "result": {
-              "duration": 40000000,
+              "duration": 46000000,
               "status": "passed"
             },
             "line": 7,
@@ -61,7 +61,7 @@
           },
           {
             "result": {
-              "duration": 7214000000,
+              "duration": 2644000000,
               "status": "passed"
             },
             "line": 8,
@@ -73,7 +73,7 @@
           },
           {
             "result": {
-              "duration": 79372000000,
+              "duration": 7604000000,
               "status": "passed"
             },
             "line": 9,
