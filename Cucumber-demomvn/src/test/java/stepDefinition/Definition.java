@@ -56,6 +56,34 @@ public class Definition {
 			Thread.sleep(3000);
 			driver.quit();
 		}
+		
+
+			@When("Enter invalid name {string}")
+			public void enter_invalid_name(String name1) {
+				   driver.findElement(By.id("txtUsername")).sendKeys(name1);
+
+			}
+
+
+
+			@When("Enter invalid pwd {string}")
+			public void enter_invalid_pwd(String pwd1) {
+				   driver.findElement(By.id("txtPassword")).sendKeys(pwd1);
+
+			   
+			}
+
+
+
+				@Then("I should see the invalidusername as {string}")
+				public void i_should_see_the_invalidusername_as(String invalid) throws InterruptedException {
+				    String text=driver.findElement(By.xpath("//span[@id='spanMessage']")).getText();
+				    Assert.assertEquals(invalid, text);
+					Thread.sleep(3000);
+					driver.quit();
+				}
+
+
 
 
 
