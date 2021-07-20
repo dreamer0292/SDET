@@ -1,11 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="16.385">
-<testcase classname="To validate Login Application" name="To Test login with valid credentials" time="16.232">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="42.517">
+<testcase classname="To validate Login Application" name="To test login with different test data" time="17.837">
+<system-out><![CDATA[Given Login page............................................................passed
+When Enter valid name "Admin"...............................................passed
+And Enter valid pwd "admin123"..............................................passed
+And click on submit button..................................................passed
+Then I should see the username as "Welcome Nishanth"........................passed
+]]></system-out>
+</testcase>
+<testcase classname="To validate Login Application" name="To test login with different test data 2" time="18.013">
 <system-out><![CDATA[Given Login page............................................................passed
 When Enter valid name "Admin"...............................................passed
 And Enter valid pwd "admin123"..............................................passed
 And click on submit button..................................................passed
 Then I should see the username as "Welcome Paul"............................passed
+]]></system-out>
+</testcase>
+<testcase classname="To validate Login Application" name="To test login with invalid credentials" time="6.525">
+<system-out><![CDATA[Given Login page............................................................passed
+When Enter invalid name "rashmi"............................................passed
+And Enter invalid pwd "rashmi"..............................................passed
+And click on submit button..................................................passed
+Then I should see the invalidusername as "Invalid credentials"..............passed
 ]]></system-out>
 </testcase>
 </testsuite>

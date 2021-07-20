@@ -3,32 +3,41 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-07-19T05:23:32.300Z",
         "line": 3,
-        "name": "To Test login with valid credentials",
+        "name": "",
         "description": "",
-        "id": "to-validate-login-application;to-test-login-with-valid-credentials",
-        "type": "scenario",
-        "keyword": "Scenario",
+        "type": "background",
+        "keyword": "Background",
         "steps": [
           {
             "result": {
-              "duration": 5820000000,
+              "duration": 5526000000,
               "status": "passed"
             },
-            "line": 5,
+            "line": 4,
             "name": "Login page",
             "match": {
               "location": "stepDefinition.Definition.login_page()"
             },
             "keyword": "Given "
-          },
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-20T04:31:36.077Z",
+        "line": 24,
+        "name": "To test login with different test data",
+        "description": "",
+        "id": "to-validate-login-application;to-test-login-with-different-test-data;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
           {
             "result": {
-              "duration": 53000000,
+              "duration": 74000000,
               "status": "passed"
             },
-            "line": 6,
+            "line": 16,
             "name": "Enter valid name \"Admin\"",
             "match": {
               "arguments": [
@@ -43,10 +52,10 @@
           },
           {
             "result": {
-              "duration": 46000000,
+              "duration": 62000000,
               "status": "passed"
             },
-            "line": 7,
+            "line": 17,
             "name": "Enter valid pwd \"admin123\"",
             "match": {
               "arguments": [
@@ -61,10 +70,10 @@
           },
           {
             "result": {
-              "duration": 2644000000,
+              "duration": 4379000000,
               "status": "passed"
             },
-            "line": 8,
+            "line": 18,
             "name": "click on submit button",
             "match": {
               "location": "stepDefinition.Definition.click_on_submit_button()"
@@ -73,10 +82,108 @@
           },
           {
             "result": {
-              "duration": 7604000000,
+              "duration": 7740000000,
               "status": "passed"
             },
-            "line": 9,
+            "line": 19,
+            "name": "I should see the username as \"Welcome Nishanth\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Welcome Nishanth\"",
+                  "offset": 29
+                }
+              ],
+              "location": "stepDefinition.Definition.i_should_see_the_username_as(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 6349000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Login page",
+            "match": {
+              "location": "stepDefinition.Definition.login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-20T04:31:53.923Z",
+        "line": 25,
+        "name": "To test login with different test data",
+        "description": "",
+        "id": "to-validate-login-application;to-test-login-with-different-test-data;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 49000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Enter valid name \"Admin\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Admin\"",
+                  "offset": 17
+                }
+              ],
+              "location": "stepDefinition.Definition.enter_valid_name(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 44000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Enter valid pwd \"admin123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"admin123\"",
+                  "offset": 16
+                }
+              ],
+              "location": "stepDefinition.Definition.enter_valid_pwd(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3984000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "click on submit button",
+            "match": {
+              "location": "stepDefinition.Definition.click_on_submit_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7587000000,
+              "status": "passed"
+            },
+            "line": 19,
             "name": "I should see the username as \"Welcome Paul\"",
             "match": {
               "arguments": [
@@ -86,6 +193,104 @@
                 }
               ],
               "location": "stepDefinition.Definition.i_should_see_the_username_as(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5188000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Login page",
+            "match": {
+              "location": "stepDefinition.Definition.login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-20T04:32:11.940Z",
+        "line": 28,
+        "name": "To test login with invalid credentials",
+        "description": "",
+        "id": "to-validate-login-application;to-test-login-with-invalid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 60000000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "Enter invalid name \"rashmi\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"rashmi\"",
+                  "offset": 19
+                }
+              ],
+              "location": "stepDefinition.Definition.enter_invalid_name(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 59000000,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "Enter invalid pwd \"rashmi\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"rashmi\"",
+                  "offset": 18
+                }
+              ],
+              "location": "stepDefinition.Definition.enter_invalid_pwd(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1190000000,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "click on submit button",
+            "match": {
+              "location": "stepDefinition.Definition.click_on_submit_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 25000000,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "I should see the invalidusername as \"Invalid credentials\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Invalid credentials\"",
+                  "offset": 36
+                }
+              ],
+              "location": "stepDefinition.Definition.i_should_see_the_invalidusername_as(java.lang.String)"
             },
             "keyword": "Then "
           }
